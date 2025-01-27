@@ -12,6 +12,8 @@ body {
 
 .content {
   padding: 30px;
+  display: flex;
+  gap: 2em;
 }
 
 h2 {
@@ -37,8 +39,35 @@ form {
 #sign-in,
 #sign-up {
   width: 100%;
+  flex-direction: column;
 }
-
+.form-header {
+  margin-bottom: 1.5em;
+}
+.form-input-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  margin-bottom: 1.5em;
+  width: 100%;
+}
+hr {
+  margin: 1.5em 0;
+}
+.form-submit-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.form-group-horizontal-control {
+  display: flex;
+  gap: 1em;
+}
+#city,
+#state {
+  height: 2em;
+}
 a {
   color: #335eea;
   text-decoration: none;
